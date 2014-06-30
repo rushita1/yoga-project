@@ -1,0 +1,143 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font: 14px/20px Arial, Helvetica, serif;
+	color: #000000;
+}
+
+div{
+	display: block;
+}
+
+
+.content-logged-details 
+{
+width: 610px;
+height: 580px;
+padding: 0 2px 15px 14px;
+/*overflow: hidden;*/
+position: fixed;
+z-index: 2;
+display: none;
+ background: none repeat scroll 0 0 #FFFFFF;
+ border: 4px solid #ccc;
+border-radius: 3px 3px 3px 3px;
+color: #333333;
+left: 55%;
+margin-left: -402px;
+top: 10%;
+
+
+}
+
+.content-details {
+width: 100%;
+overflow: hidden;
+padding: 19px 0 0;
+
+}
+
+
+.block-galery {
+float: left;
+width: 303px;
+padding: 4px 0 0;
+margin: 0 15px 0 0;
+}
+
+.title {
+width: 100%;
+margin: 10px 0 0;
+padding-bottom: 6px;
+overflow: hidden;
+border-bottom: 1px solid #dfe2db;
+}
+
+
+
+#details-galery {
+width: 330px;
+overflow: hidden;
+}
+
+.content-text {
+overflow: hidden;
+
+
+}
+
+img {
+display: block;
+border: 0;
+width: 303px;
+height: 303px;
+}
+
+#backgroundPopup {
+	    z-index:1;
+	    position: fixed;
+	    display:none;
+	    height:100%;
+	    width:100%;
+	    background:#000000;
+	    top:0px;
+	    left:0px;
+	}	
+	
+	div.loader {
+	    background: url("img/31.gif") no-repeat scroll 0 0 transparent;
+	    height: 32px;
+	    width: 32px;
+	    display: none;
+	    z-index: 9999;
+	    top: 40%;
+	    left: 50%;
+    	position: absolute;
+	    margin-left: -10px;
+	}
+	div.close {
+	    background: url("img/closebox.png") no-repeat scroll 0 0 transparent;
+	    cursor: pointer;
+	    height: 30px;
+	    position: absolute;
+	    right: -27px;
+	    top: -24px;
+	    width: 30px;
+	    float: right;
+	}
+	span.ecs_tooltip {
+	    background: none repeat scroll 0 0 #000000;
+	    border-radius: 2px 2px 2px 2px;
+	    color: #FFFFFF;
+	    display: none;
+	    font-size: 11px;
+	    height: 16px;
+	    opacity: 0.7;
+	    padding: 4px 3px 2px 5px;
+	    position: absolute;
+	    right: -62px;
+	    text-align: center;
+	    top: -51px;
+	    width: 93px;
+	}
+	span.arrow {
+	    border-left: 5px solid transparent;
+   		border-right: 5px solid transparent;
+   		border-top: 7px solid #000000;
+	    display: block;
+	    height: 1px;
+	    left: 40px;
+	    position: relative;
+	    top: 3px;
+	    width: 1px;
+	}
+	div.content-details {
+	    /*margin: 4px 7px;*/
+	     
+	    overflow-y:scroll;
+	    height:530px;
+	    
+	}

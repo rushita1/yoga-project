@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+  display: block;
+  height: 100px;
+  width: 979px;
+  background: #0043A8;
+  /*margin-left: auto; */
+  /*margin-right: auto;*/
+  margin-left: 200px;
+  margin-top: 5px;
+}
+
+  
+#menubar{ 
+  width: 940px;
+  height: 50px;
+  text-align: center; 
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top: 50px;
+
+}  
+
+
+ul#nav{ 
+	
+	margin:0;
+}
+
+ul#nav li{
+  padding: 0 0 0 0px;
+  list-style: none;
+  margin: 2px 0 0 0;
+  display: inline;
+  background: transparent;
+}
+
+ul#nav li a{ 
+  float: left;
+  font: bold 130% 'PacificoRegular', Arial, sans-serif;
+  height: 24px;
+  margin: 8px 0 0 20px;
+  text-shadow: 0px 1px 0px #000;
+  padding: 0px 20px 10px 20px;
+  background: transparent; 
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;
+  text-align: center;
+  color: #FFF;
+  text-decoration: none;
+} 
+  
+ul#nav li.current a, ul#nav li:hover a
+{ color: #FFF;
+  background: #0055D4;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  text-shadow: none;}
+
+
+.Products{
+	background-color: orange;
+	padding: 3px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.Products img{
+	width: 100px;
+	height: 120px;
+	display: block;
+	/*float: left;*/
+	margin: 0 auto;
+}
+
+.Products .Contents{
+	/*margin-left: 50px;
+	padding-left: 10px;*/
+	margin: 0 auto;
+
+
+}
+
+main{
+	background-color: orange;
+	padding: 10px;
+	overflow: hidden;
+	margin-top: 10px;
+	width: 960px;
+	min-height: 500px;
+	margin-left: 200px;
+}
+
+main aside{
+	width: 260px;
+	height: 70px;
+	float: right;
+	background-color: red;
+	min-height: 500px;
+	margin-left: 10px;
+	margin-top: 12px;
+
+}
+
+.main-content{
+	/*margin-right: 215px;*/
+	padding: 10px;
+	background-color: blue;
+	overflow: hidden;
+	min-width: 190px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 7px;
+	width: 190px;
+	height: 245px;
+
+}
+
+
+
+.Products  h3{
+	/*margin-left: 20px;*/	
+	padding: 5px;
+	font: bold;
+	padding-left: 10px;
+}
+
+.btn{
+ 	/*margin: 0 auto;*/
+ 	margin-top: 
+}
+
+
+
+
+footer{ 
+  width: 979px;
+  height: 50px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  text-align: center; 
+  text-shadow: 1px 1px #000;
+  color: #FFF;
+  background: #0043A8;
+  margin-top: 15px;
+  margin-left: 200px;
+  margin-bottom: 5px;
+  }
+
+.main-contentX{
+	/*margin-right: 215px;*/
+	padding: 10px;
+	background-color: blue;
+	overflow: hidden;
+	margin: 8px;
+
+
+}
+
+
+
+.holder{
+	width: auto;
+	border: solid 1px;
+	overflow: hidden;
+	margin-top: 15px;
+
+
+}
+
