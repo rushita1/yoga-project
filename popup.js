@@ -84,7 +84,7 @@ jQuery(function($) {
 
 	    function disablePopup() {
 	        if(popupStatus == 1) { // if value is 1, close popup
-	            $("#content-logged-details").fadeOut("normal");
+	            $(".content-logged-details").fadeOut("normal");
 	            // popup.fadeOut("normal");
 	            $("#backgroundPopup").fadeOut("normal");
 	            popupStatus = 0;  // and set value to 0
