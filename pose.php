@@ -17,7 +17,7 @@
 		</div>
 		<div class="content-details">
 			<div class="block-galery">
-				<img src="img/yoga.jpg">
+				<img class="yogaimg"src="img/yoga.jpg">
 				<div id="details-galery">
 					<ul>
                         

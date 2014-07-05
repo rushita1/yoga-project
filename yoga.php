@@ -1,6 +1,5 @@
 <?php 
 
-
 include 'get_pose.php';
     
 ?>
@@ -16,27 +15,123 @@ include 'get_pose.php';
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="popup.js"></script>
+    <script type="text/javascript" src="add.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
-   <script>var poses = <?php echo get_poses();?></script>
+    <script>var poses = <?php echo get_poses();?></script>
+
+
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> -->
+<link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.eislideshow.js"></script>
+<script>
+jQuery.noConflict()(function ($) {
+    $('#ei-slider').eislideshow({
+        animation: 'center',
+        autoplay: true,
+        slideshow_interval: 3000,
+        titlesFactor: 0
+    });
+});
+</script>
+
 
 </head>
 
 <body>
 
-	 <header>
-	  
-	    <div id="menubar">
-          <ul id="nav">
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div><!--close menubar-->	
-      
-     </header>
+<div class="header">
+  <div id="site_title"><img src="image/logo_big.png" alt=""></div>
+  <!-- Dynamic Menu -->
+  <ol id="menu" class="simple_menu simple_menu_css horizontal black_menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#">About us</a>
+      <ol>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="fullscreen-gallery.html">Fullscreen Gallery</a></li>
+        <li><a href="cinema.html">Cinema</a></li>
+        <li><a href="slider.html">Nivo Slider</a></li>
+        <li><a href="columns.html">Columns</a></li>
+        <li><a href="tabs.html">Tabs</a></li>
+        <li><a href="photogrid.html">Photo Grid</a></li>
+        <li class="last"><a href="image.html">Static Image</a></li>
+      </ol>
+    </li>
+    <li class="last"><a href="news.html">Contacy us</a>
+  </ol>
+  <div class="clr"></div>
+</div>
+<div class="wrapper">
+  <div id="ei-slider" class="ei-slider">
+    <ul class="ei-slider-large">
+      <li> <img src="img/thumbs/8.jpg" alt="">
+        <div class="ei-title">
+          <h2>Beautiful</h2>
+          <h3>Moments</h3>
+        </div>
+      </li>
+      <li> <img src="img/thumbs/9.jpg" alt="">
+        <div class="ei-title">
+          <h2>Passionate</h2>
+          <h3>Yoga</h3>
+        </div>
+      </li>
+      <li> <img src="img/thumbs/10.jpg" alt="">
+        <div class="ei-title">
+          <h2>Tranquility</h2>
+          <h3>in blue</h3>
+        </div>
+      </li>
+      <li> <img src="img/thumbs/14.jpg" alt="">
+        <div class="ei-title">
+          <h2>Vintage</h2>
+          <h3>Beauty</h3>
+        </div>
+      </li>
+      <li> <img src="img/thumbs/12.jpg" alt="">
+        <div class="ei-title">
+          <h2>Mystery</h2>
+          <h3>Man</h3>
+        </div>
+      </li>
+      <li> <img src="img/thumbs/13.jpg" alt="">
+        <div class="ei-title">
+          <h2>On the</h2>
+          <h3>Mountain</h3>
+        </div>
+      </li>
+      <li> <img src="img/thumbs/15.jpg" alt="">
+        <div class="ei-title">
+          <h2>Beauty of</h2>
+          <h3>India</h3>
+        </div>
+      </li>
+    </ul>
+    <!-- ei-slider-large -->
+    <ul class="ei-slider-thumbs">
+      <li class="ei-slider-element">Current</li>
+      <li><a href="#">Slide 1</a><img src="img/thumbs/8.jpg" alt=""></li>
+      <li><a href="#">Slide 2</a><img src="img/thumbs/9.jpg" alt=""></li>
+      <li><a href="#">Slide 3</a><img src="img/thumbs/10.jpg" alt=""></li>
+      <li><a href="#">Slide 4</a><img src="img/thumbs/14.jpg" alt=""></li>
+      <li><a href="#">Slide 5</a><img src="img/thumbs/12.jpg" alt=""></li>
+      <li><a href="#">Slide 6</a><img src="img/thumbs/13.jpg" alt=""></li>
+      <li><a href="#">Slide 7</a><img src="img/thumbs/15.jpg" alt=""></li>
+    </ul>
+    <!-- ei-slider-thumbs -->
+  </div>
+  <!-- ei-slider -->
+</div>
+<!-- wrapper -->
 
 
-<main>
+<!-- close container -->
+
+
+<main class="main">
 
 	<form name="myform" action="" method="POST">
 		<div class="drp">
@@ -57,17 +152,18 @@ include 'get_pose.php';
 
 <aside>
 
-	<div class="main-contentX">
-		<h3>Pose Name</h3>
+	 <div class="bought"> Cart <br><button class="removeAll"> Remove All</button>
+	    <form action="routine.php" method="POST">
+	    <input type="text" id="routine-name" name="routine_name">
+	    <ul class="cart"></ul>
 
+	     <button class="savebtn" type="submit">Save</button>
+	     
+	     <input type="hidden" id="form-pose-id" name="pose_id">
+	     <input type="hidden" id="form-user-id" name="user_id" value="1">	
+	    </form>
+	 </div>
 
-		<div class="Products">
-			<img src="img/yoga.jpg" alt="">
-			<div class="Contents"></div>
-				<button class="btn">Remove</button>
-			<h3>Category</h3>
-
-		</div>
 
 </aside>
 
@@ -75,68 +171,15 @@ include 'get_pose.php';
  <div class="holder">
 
 
-	<div class="main-content pose">
-		<h3>Pose Name</h3>
-	
-
-		<div class="Products">
-			<img src="img/yoga.jpg" alt="">
-			<div class="Contents"></div>
-				<button class="btn">Add</button>
-			<h3>Category</h3>
-
-		</div>
-	</div>
-
-
- 	<div class="close"></div>
-    <span class="ecs_tooltip">Press Esc to close <span class="arrow"></span></span>
-
-
-	<div class="main-content pose">
-		<h3>Pose Name</h3>
-
-
-		<div class="Products">
-			<img src="img/yoga.jpg" alt="">
-			<div class="Contents"></div>
-				<button class="btn">Add</button>
-			<h3>Category</h3>
-
-		</div>
-	</div>
-
-	<div class="main-content pose">
-		<h3>Pose Name</h3>
-
-
-		<div class="Products">
-			<img src="img/yoga.jpg" alt="">
-			<div class="Contents"></div>
-				<button class="btn">Add</button>
-			<h3>Category</h3>
-
-		</div>
-	</div>
-
- </div>
 </main>
 
-
-<footer>
-	  <a href="#">Home</a> |
-	  <a href="#">About us</a> |
-	  <a href="#">Contact</a>
-	  <br/><br/>
-	  <a href="http://fotogrph.com">Images</a> 
-</footer>
 
  <script id="company-media-object" type="text/x-handlebars-template">
 
         {{#each this}}
 
 			<div class="main-content">
-				<h3><a href="" id="{{pose_id}}" class="topopup">{{name}}</a></h3>
+				<h4><a href="" id="{{pose_id}}" class="topopup">{{name}}</a></h4>
 
 
 				<div class="content-logged-details">
@@ -176,7 +219,7 @@ include 'get_pose.php';
 					
 	                <strong>Contraindication:</strong><p><li>{{risks}}</li></p>
 
-	                <strong>Benefits:</strong><p></p><li>benefits</li><li><p></p>
+	                <strong>Benefits:</strong><p></p><li>{{benifits}}</li><li><p></p>
 
 					<!--<div class="button"><a href="#">Add pose to sequence</a></div>-->
 				</li></div>
@@ -187,16 +230,27 @@ include 'get_pose.php';
 	<div class="loader"></div>
 	<div id="backgroundPopup"></div>
 
-
 		<div class="Products">
+			<input type="hidden" class="{{pose_id}}">
 			<img src="{{img}}">
 			<div class="Contents"></div>
 				<button class="btn">Add</button>
-			<h3>{{category}}</h3>
+			<h4>{{category}}</h4>
 
 		</div>
 	</div>
 	{{/each}}
    </script>
+
+<div style="clear:both; height: 40px"></div>
+<div id="footer">
+  <div id="social_icons"> 
+  <img src="img/icon_fb.png" alt="">
+   <img src="img/icon_twitter.png" alt=""> 
+   <img src="img/icon_in.png" alt=""> </div>
+  Theme by <a href="#">Rushita Patolia</a> 
+  </div>
+ 
+
 </body>
 </html>

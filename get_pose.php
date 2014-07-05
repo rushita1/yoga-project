@@ -15,10 +15,17 @@ function get_poses(){
 
 // Start Database Object
 $db = new db();
-	
+
+// if($_POST['category']=="All"){
+//   $cat="%";
+// }else{
+//   $cat = $_POST['category'];
+// }
+
 // Write SQL Statement
 $sql = "
   SELECT * FROM yoga_pose
+   
   ";
 
   // echo $sql;

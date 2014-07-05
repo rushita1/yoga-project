@@ -16,7 +16,7 @@ div{
 .content-logged-details 
 {
 width: 610px;
-height: 580px;
+height: 610px;
 padding: 0 2px 15px 14px;
 /*overflow: hidden;*/
 position: fixed;
@@ -69,11 +69,11 @@ overflow: hidden;
 
 }
 
-img {
+.yogaimg {
 display: block;
 border: 0;
 width: 303px;
-height: 303px;
+height: 99px;
 }
 
 #backgroundPopup {
