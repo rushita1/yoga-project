@@ -25,9 +25,9 @@ $db = new db();
 // Write SQL Statement
 $sql = "
   SELECT * FROM yoga_pose
-   
   ";
 
+   // WHERE category LIKE \"$cat\"
   // echo $sql;
 // Execute SQL Statement
 $results = $db->execute($sql);

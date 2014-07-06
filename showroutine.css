@@ -1,1 +1,58 @@
-showroutine.css
+
+.main
+{
+
+	background-color: orange;
+	padding: 10px;
+	overflow: hidden;
+	margin-top: 30px;
+	width: 960px;
+	min-height: 500px;
+	margin-left: 200px;
+	/*overflow: scroll;*/
+}
+
+
+.main-content
+{
+	/*margin-right: 215px;*/
+	padding: 10px;
+	background-color: blue;
+	overflow: hidden;
+	min-width: 190px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 7px;
+	width: 190px;
+	height: 245px;
+
+}
+
+
+.Products
+{
+	background-color: orange;
+	padding: 3px;
+	overflow: hidden;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.Products img
+{
+	width: 100px;
+	height: 120px;
+	display: block;
+	/*float: left;*/
+	margin: 0 auto;
+}
+
+.Products .Contents
+{
+	/*margin-left: 50px;
+	padding-left: 10px;*/
+	margin: 0 auto;
+
+}

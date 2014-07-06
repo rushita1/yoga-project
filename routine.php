@@ -50,18 +50,10 @@ foreach($pose_ids as $pose_id){
 }
 	
 
-echo json_encode($results);
+echo json_encode($routine_id);
 
 
 
-// echo $sql;
-// exit();
-// Execute SQL Statement
-// if ($db->execute($sql)) {
-// 	header('rushita.com/yoga-project/save.php');
-	//echo 12;
-    //exit();
-//}
 
 
  ?>

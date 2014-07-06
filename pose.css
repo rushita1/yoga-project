@@ -99,7 +99,7 @@ height: 99px;
 	    margin-left: -10px;
 	}
 	div.close {
-	    background: url("img/closebox.png") no-repeat scroll 0 0 transparent;
+	    background: url("image/closebox.png") no-repeat scroll 0 0 transparent;
 	    cursor: pointer;
 	    height: 30px;
 	    position: absolute;

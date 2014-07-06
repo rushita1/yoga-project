@@ -54,6 +54,7 @@ $(function() {
 			},
 			success: function(data){
 				console.log(data + "success!");
+				window.location.replace("showroutine.php?routine_id="+data);
 			},
 		})
 		// $('.main').hide();
