@@ -59,12 +59,37 @@ while ($row = $results->fetch_assoc()) {
     
  <meta charset="UTF-8">
  <link rel="stylesheet" href="showroutine.css">
+ <link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
 
  <body>
+
+
+ <div class="header">
+  <div id="site_title"><img src="image/logo_big.png" alt=""></div>
+  <!-- Dynamic Menu -->
+  <ol id="menu" class="simple_menu simple_menu_css horizontal black_menu">
+    <li><a href="yoga.php">Home</a></li>
+    <li><a href="#">About us</a>
+      <ol>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="fullscreen-gallery.html">Fullscreen Gallery</a></li>
+        <li><a href="cinema.html">Cinema</a></li>
+        <li><a href="slider.html">Nivo Slider</a></li>
+        <li><a href="columns.html">Columns</a></li>
+        <li><a href="tabs.html">Tabs</a></li>
+        <li><a href="photogrid.html">Photo Grid</a></li>
+        <li class="last"><a href="image.html">Static Image</a></li>
+      </ol>
+    </li>
+    <li class="last"><a href="news.html">Contacy us</a>
+  </ol>
+  <div class="clr"></div>
+</div>
 	 
 	<main class="main">
 
-		<div><?php echo $routine_name ?></div>
+		<div class="title"><?php echo $routine_name ?></div>
 
 		
 

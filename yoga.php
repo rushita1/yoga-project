@@ -234,8 +234,8 @@ jQuery.noConflict()(function ($) {
 			<input type="hidden" class="{{pose_id}}">
 			<img src="{{img}}">
 			<div class="Contents"></div>
+      <h4>{{category}}</h4>
 				<button class="btn">Add</button>
-			<h4>{{category}}</h4>
 
 		</div>
 	</div>

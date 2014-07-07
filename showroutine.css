@@ -1,8 +1,51 @@
 
+body{
+	background: #fff url(img/body_bg.jpg); 
+}
+
+
+.header{
+	font-family:"Lucida Grande", Tahoma, Verdana, Arial, sans-serif;
+	font-size: 10px;
+	height: 122px;
+	padding: 3px 5px;
+	background: url(img/nav_bg.jpg) repeat-x;
+	position: relative;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
+	box-shadow: 0px 1px 4px rgba(0,0,0,0.6);
+}
+
+#site_title {
+	width: 960px; margin: auto; 
+	padding-top: 25px
+}
+
+#site_title img {
+	float: left;
+	display: block;
+	width: 137px;
+	height: 100px;
+
+}
+
+
+
+.logo {
+	width: 960px; 
+	margin: auto; text-align: center; 
+	letter-spacing: 18px; padding: 40px 0
+}
+
+
+
 .main
 {
 
-	background-color: orange;
+	/*background-color: white;*/
+	background: rgba(88,130,250,0.3); 
 	padding: 10px;
 	overflow: hidden;
 	margin-top: 30px;
@@ -17,7 +60,7 @@
 {
 	/*margin-right: 215px;*/
 	padding: 10px;
-	background-color: blue;
+	background-color: white;
 	overflow: hidden;
 	min-width: 190px;
 	display: inline-block;
@@ -31,7 +74,7 @@
 
 .Products
 {
-	background-color: orange;
+	background-color: white;
 	padding: 3px;
 	overflow: hidden;
 	margin-top: 10px;
@@ -55,4 +98,18 @@
 	padding-left: 10px;*/
 	margin: 0 auto;
 
+}
+
+a {
+	color: black; 
+	text-decoration: none;
+	margin-left: 50px;
+
+}
+
+.title{
+	font-weight: bold;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 12px;
 }
