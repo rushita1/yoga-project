@@ -57,9 +57,53 @@ $(function() {
 				window.location.replace("showroutine.php?routine_id="+data);
 			},
 		})
-		// $('.main').hide();
-		// $('.main2').show();
+		
 	});
+
+// selecting category from drop down
+
+ $(".mydropdown").on("change", function() {
+
+ 	var cat = {
+            category: $(this).val()
+          }
+          console.log(cat);
+
+    $.ajax({
+          url: "category.php",
+          type: "POST",
+          dataType: "json",
+          cache: false,
+          data: cat,
+          success: function(data) {
+          	
+          	$(".holder .main-content").remove();
+
+          	// Get Template for .main-content
+
+          	// Add data to template
+
+          	// Append new el to .holder
+
+          	$(".holder").append("<h1>");
+
+          	$(".holder").append(".main-content");
+
+
+
+          	$(".holder h1").text(data[0].name);
+          },
+          error: function(data) {
+            console.log(data+'error');
+           
+          }
+        });
+  });
+
+
+
+
+
 
 	
 	$('body').on('click', '.cart button', function() {

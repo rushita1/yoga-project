@@ -118,7 +118,9 @@ h2, h3 {
 }
 
 h2 {
-	font-size: 2em
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
 }
 
 h3 {
@@ -651,13 +653,13 @@ margin-top: 15px;
 display: block;
 border: 0;
 width: 80px;
-height: 80px;
+height: 93px;
 margin-left: 5px;
 }
 
 .cart li{
 border: solid 2px black;
-margin-bottom: 5px;
+margin: 19px 8px 5px 8px;
 }
 
 .cart a{
@@ -666,4 +668,7 @@ margin-left: 5px;
 
 .cart button{
 margin-left: 5px;
+margin-bottom: 7px;
 }
+
+

@@ -1,6 +1,6 @@
 <?php 
 
-include 'get_pose.php';
+include 'get_poses.php';
     
 ?>
 
@@ -13,11 +13,11 @@ include 'get_pose.php';
     <link rel="stylesheet" href="yoga.css">
     <link rel="stylesheet" href="pose.css">
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
+    <script>var poses = <?php echo get_poses();?></script>
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="popup.js"></script>
     <script type="text/javascript" src="add.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
-    <script>var poses = <?php echo get_poses();?></script>
 
 
 <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"> -->
@@ -73,7 +73,7 @@ jQuery.noConflict()(function ($) {
           <h3>Moments</h3>
         </div>
       </li>
-      <li> <img src="img/thumbs/9.jpg" alt="">
+      <li> <img src="img/thumbs/16.jpg" alt="">
         <div class="ei-title">
           <h2>Passionate</h2>
           <h3>Yoga</h3>
@@ -114,7 +114,7 @@ jQuery.noConflict()(function ($) {
     <ul class="ei-slider-thumbs">
       <li class="ei-slider-element">Current</li>
       <li><a href="#">Slide 1</a><img src="img/thumbs/8.jpg" alt=""></li>
-      <li><a href="#">Slide 2</a><img src="img/thumbs/9.jpg" alt=""></li>
+      <li><a href="#">Slide 2</a><img src="img/thumbs/16.jpg" alt=""></li>
       <li><a href="#">Slide 3</a><img src="img/thumbs/10.jpg" alt=""></li>
       <li><a href="#">Slide 4</a><img src="img/thumbs/14.jpg" alt=""></li>
       <li><a href="#">Slide 5</a><img src="img/thumbs/12.jpg" alt=""></li>
@@ -135,29 +135,30 @@ jQuery.noConflict()(function ($) {
 
 	<form name="myform" action="" method="POST">
 		<div class="drp">
-		<select name="mydropdown">
+		<select class ="mydropdown" name="mydropdown">
 		<option value="all">All</option>
 		<option value="arm">Arm balance</option>
 		<option value="backend">Backend</option>
-		<option value="balance">Balancing</option>
+		<option value="Balance">Balancing</option>
 		<option value="forward">Forward band</option>
 		<option value="inversion">Inversion</option>
 		<option value="sideband">Sideband</option>
 		<option value="twist">Twist</option>
 		<option value="othes">Other</option>
-		<option value="warmup">Warm up, Restorative</option>
+		<option value="warmup-restorative">Warm up, Restorative</option>
 		</select>
 		</div>
 	</form>
 
 <aside>
 
-	 <div class="bought"> Cart <br><button class="removeAll"> Remove All</button>
+	 <div class="bought"><h2>pose SEQUENCE</h2>
+   <button class="removeAll"> Remove All</button><br><br>
 	    <form action="routine.php" method="POST">
 	    <input type="text" id="routine-name" name="routine_name">
-	    <ul class="cart"></ul>
-
 	     <button class="savebtn" type="submit">Save</button>
+      <ul class="cart"></ul>
+
 	     
 	     <input type="hidden" id="form-pose-id" name="pose_id">
 	     <input type="hidden" id="form-user-id" name="user_id" value="1">	
@@ -247,8 +248,9 @@ jQuery.noConflict()(function ($) {
   <div id="social_icons"> 
   <img src="img/icon_fb.png" alt="">
    <img src="img/icon_twitter.png" alt=""> 
-   <img src="img/icon_in.png" alt=""> </div>
-  Theme by <a href="#">Rushita Patolia</a> 
+   <img src="img/icon_in.png" alt=""> 
+</div>
+  <a href="#">  Theme by Rushita Patolia</a> 
   </div>
  
 

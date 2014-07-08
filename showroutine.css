@@ -1,6 +1,7 @@
 
 body{
-	background: #fff url(img/body_bg.jpg); 
+	background: #fff url(img/thumbs/11.jpg) no-repeat top left; 
+	background-size: 100% 100%;
 }
 
 
@@ -45,12 +46,12 @@ body{
 {
 
 	/*background-color: white;*/
-	background: rgba(88,130,250,0.3); 
+	background: rgba(225,225,0,0.2); 
 	padding: 10px;
 	overflow: hidden;
 	margin-top: 30px;
 	width: 960px;
-	min-height: 500px;
+	min-height: 600px;
 	margin-left: 200px;
 	/*overflow: scroll;*/
 }
